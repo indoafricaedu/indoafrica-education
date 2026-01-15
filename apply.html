@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - IndoAfrica Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">IndoAfrica Education</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apply.html" class="active">Apply Now</a></li>
+            <li><a href="visa.html">Visa Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- APPLICATION FORM SECTION -->
+<section class="apply-section">
+    <div class="container">
+        <div class="form-header">
+            <h1>🔒 Secure Online Application Portal</h1>
+            <p>All documents are submitted securely and handled confidentially. Our team will guide you step-by-step through the admission process.</p>
+        </div>
+
+        <div class="form-container">
+            <form id="applicationForm" action="https://formsubmit.co/issaalpha67@gmail.com" method="POST" enctype="multipart/form-data">
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp Number *</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="+263 XX XXX XXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nationality">Nationality *</label>
+                    <input type="text" id="nationality" name="nationality" value="Zimbabwe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="qualification">Highest Qualification *</label>
+                    <select id="qualification" name="qualification" required>
+                        <option value="">Select your qualification</option>
+                        <option value="O Level">O Level</option>
+                        <option value="A Level">A Level</option>
+                        <option value="A Level">A Level</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course Interested In *</label>
+                    <input type="text" id="course" name="course" placeholder="e.g., Computer Science, Business Administration" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="university">Preferred University *</label>
+                    <select id="university" name="university" required>
+                        <option value="">Select a university</option>
+                        <optgroup label="🟢 With First Flight Ticket">
+                            <option value="Marwadi University">Marwadi University - Rajkot, Gujarat</option>
+                            <option value="RK University">RK University - Rajkot, Gujarat</option>
+                            <option value="MATS University">MATS University - Raipur, Chhattisgarh</option>
+                        </optgroup>
+                        <optgroup label="🔵 Without Flight Ticket">
+                            <option value="SVIET University">SVIET University - Punjab, India</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Required Documents *</label>
+                    <p class="file-note">Upload your documents:</p>
+                    
+                    <label for="passport">Passport Copy</label>
+                    <input type="file" id="passport" name="passport" accept=".pdf,.jpg,.jpeg,.png" required>
+                    
+                    <label for="certificates">Academic Certificates</label>
+                    <input type="file" id="certificates" name="certificates" accept=".pdf,.jpg,.jpeg,.png" required>
+                    
+                    <label for="transcripts">Academic Transcripts</label>
+                    <input type="file" id="transcripts" name="transcripts" accept=".pdf,.jpg,.jpeg,.png" required>
+                    
+                    <label for="cv">CV/Resume (Optional)</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="consent" required>
+                        I confirm that all information provided is accurate and I consent to IndoAfrica Education processing my application.
+                    </label>
+                </div>
+
+                <input type="hidden" name="_subject" value="New Student Application - IndoAfrica Education">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+
+                <button type="submit" class="btn btn-submit">Submit Application</button>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display:none;">
+                <h3>✅ Application Submitted Successfully!</h3>
+                <p>Thank you for your application. We have received your information and documents.</p>
+                <p>Our team will review your application and contact you within 24-48 hours via WhatsApp or email.</p>
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 IndoAfrica Education. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

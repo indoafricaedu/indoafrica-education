@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply Now - IndoAfrica Education</title>
+    <title>Contact Us - IndoAfrica Education</title>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome (WhatsApp icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Material Icons (Mail & Application) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
@@ -14,265 +22,148 @@
         <div class="logo">IndoAfrica Education</div>
         <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="apply.html" class="active">Apply Now</a></li>
+            <li><a href="apply.html">Apply Now</a></li>
             <li><a href="visa.html">Visa Process</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- APPLICATION FORM SECTION -->
-<section class="apply-section">
+<!-- CONTACT SECTION -->
+<section class="contact-section">
     <div class="container">
-        <div class="form-header">
-            <h1>🔒 Secure Online Application Portal</h1>
-            <p>All documents are submitted securely and handled confidentially. Our team will guide you step-by-step through the admission process.</p>
+        <div class="contact-header">
+            <h1>Contact IndoAfrica Education</h1>
+            <p>
+                For application guidance and enquiries, students may contact us directly.
+                Our team is ready to assist you with your study abroad journey.
+            </p>
         </div>
 
-        <div class="form-container">
-            <form id="applicationForm" action="https://formsubmit.co/issaalpha67@gmail.com" method="POST" enctype="multipart/form-data">
+        <!-- MERGED CONTACT CARD -->
+        <div class="contact-grid">
+            <div class="contact-card merged-card">
 
-                <div class="form-group">
-                    <label>Name *</label>
-                    <input type="text" name="name" placeholder="Enter your first name" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Surname *</label>
-                    <input type="text" name="surname" placeholder="Enter your surname" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Gender *</label>
-                    <select name="gender" required>
-                        <option value="">Select gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Date of Birth *</label>
-                    <input type="date" name="dob" required>
-                </div>
-
-                <!-- PHONE -->
-                <div class="form-group">
-                    <label>Phone *</label>
-                    <div class="phone-group">
-                        <select name="phone_country_code" required>
-                            <option value="">Select country</option>
-                            <option value="+213">Algeria (+213)</option>
-                            <option value="+244">Angola (+244)</option>
-                            <option value="+229">Benin (+229)</option>
-                            <option value="+267">Botswana (+267)</option>
-                            <option value="+226">Burkina Faso (+226)</option>
-                            <option value="+257">Burundi (+257)</option>
-                            <option value="+237">Cameroon (+237)</option>
-                            <option value="+238">Cape Verde (+238)</option>
-                            <option value="+236">Central African Republic (+236)</option>
-                            <option value="+235">Chad (+235)</option>
-                            <option value="+269">Comoros (+269)</option>
-                            <option value="+242">Congo (+242)</option>
-                            <option value="+243">DR Congo (+243)</option>
-                            <option value="+225">Côte d’Ivoire (+225)</option>
-                            <option value="+253">Djibouti (+253)</option>
-                            <option value="+20">Egypt (+20)</option>
-                            <option value="+240">Equatorial Guinea (+240)</option>
-                            <option value="+291">Eritrea (+291)</option>
-                            <option value="+251">Ethiopia (+251)</option>
-                            <option value="+241">Gabon (+241)</option>
-                            <option value="+220">Gambia (+220)</option>
-                            <option value="+233">Ghana (+233)</option>
-                            <option value="+224">Guinea (+224)</option>
-                            <option value="+245">Guinea-Bissau (+245)</option>
-                            <option value="+254">Kenya (+254)</option>
-                            <option value="+266">Lesotho (+266)</option>
-                            <option value="+231">Liberia (+231)</option>
-                            <option value="+218">Libya (+218)</option>
-                            <option value="+261">Madagascar (+261)</option>
-                            <option value="+265">Malawi (+265)</option>
-                            <option value="+223">Mali (+223)</option>
-                            <option value="+222">Mauritania (+222)</option>
-                            <option value="+230">Mauritius (+230)</option>
-                            <option value="+212">Morocco (+212)</option>
-                            <option value="+258">Mozambique (+258)</option>
-                            <option value="+264">Namibia (+264)</option>
-                            <option value="+227">Niger (+227)</option>
-                            <option value="+234">Nigeria (+234)</option>
-                            <option value="+250">Rwanda (+250)</option>
-                            <option value="+221">Senegal (+221)</option>
-                            <option value="+248">Seychelles (+248)</option>
-                            <option value="+232">Sierra Leone (+232)</option>
-                            <option value="+252">Somalia (+252)</option>
-                            <option value="+27">South Africa (+27)</option>
-                            <option value="+211">South Sudan (+211)</option>
-                            <option value="+249">Sudan (+249)</option>
-                            <option value="+268">Eswatini (+268)</option>
-                            <option value="+255">Tanzania (+255)</option>
-                            <option value="+228">Togo (+228)</option>
-                            <option value="+216">Tunisia (+216)</option>
-                            <option value="+256">Uganda (+256)</option>
-                            <option value="+260">Zambia (+260)</option>
-                            <option value="+263" selected>Zimbabwe (+263)</option>
-                        </select>
-                        <input type="tel" name="phone" placeholder="Enter phone number" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Email Address *</label>
-                    <input type="email" name="email" placeholder="your.email@example.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Address *</label>
-                    <input type="text" name="address" placeholder="Enter your full address" required>
-                </div>
-
-                <!-- PARENTS NUMBER -->
-                <div class="form-group">
-                    <label>Parents No *</label>
-                    <div class="phone-group">
-                        <select name="parents_country_code" required>
-                            <option value="">Select country</option>
-                            <!-- SAME AFRICAN LIST -->
-                            <option value="+213">Algeria (+213)</option>
-                            <option value="+244">Angola (+244)</option>
-                            <option value="+229">Benin (+229)</option>
-                            <option value="+267">Botswana (+267)</option>
-                            <option value="+226">Burkina Faso (+226)</option>
-                            <option value="+257">Burundi (+257)</option>
-                            <option value="+237">Cameroon (+237)</option>
-                            <option value="+238">Cape Verde (+238)</option>
-                            <option value="+236">Central African Republic (+236)</option>
-                            <option value="+235">Chad (+235)</option>
-                            <option value="+269">Comoros (+269)</option>
-                            <option value="+242">Congo (+242)</option>
-                            <option value="+243">DR Congo (+243)</option>
-                            <option value="+225">Côte d’Ivoire (+225)</option>
-                            <option value="+253">Djibouti (+253)</option>
-                            <option value="+20">Egypt (+20)</option>
-                            <option value="+240">Equatorial Guinea (+240)</option>
-                            <option value="+291">Eritrea (+291)</option>
-                            <option value="+251">Ethiopia (+251)</option>
-                            <option value="+241">Gabon (+241)</option>
-                            <option value="+220">Gambia (+220)</option>
-                            <option value="+233">Ghana (+233)</option>
-                            <option value="+224">Guinea (+224)</option>
-                            <option value="+245">Guinea-Bissau (+245)</option>
-                            <option value="+254">Kenya (+254)</option>
-                            <option value="+266">Lesotho (+266)</option>
-                            <option value="+231">Liberia (+231)</option>
-                            <option value="+218">Libya (+218)</option>
-                            <option value="+261">Madagascar (+261)</option>
-                            <option value="+265">Malawi (+265)</option>
-                            <option value="+223">Mali (+223)</option>
-                            <option value="+222">Mauritania (+222)</option>
-                            <option value="+230">Mauritius (+230)</option>
-                            <option value="+212">Morocco (+212)</option>
-                            <option value="+258">Mozambique (+258)</option>
-                            <option value="+264">Namibia (+264)</option>
-                            <option value="+227">Niger (+227)</option>
-                            <option value="+234">Nigeria (+234)</option>
-                            <option value="+250">Rwanda (+250)</option>
-                            <option value="+221">Senegal (+221)</option>
-                            <option value="+248">Seychelles (+248)</option>
-                            <option value="+232">Sierra Leone (+232)</option>
-                            <option value="+252">Somalia (+252)</option>
-                            <option value="+27">South Africa (+27)</option>
-                            <option value="+211">South Sudan (+211)</option>
-                            <option value="+249">Sudan (+249)</option>
-                            <option value="+268">Eswatini (+268)</option>
-                            <option value="+255">Tanzania (+255)</option>
-                            <option value="+228">Togo (+228)</option>
-                            <option value="+216">Tunisia (+216)</option>
-                            <option value="+256">Uganda (+256)</option>
-                            <option value="+260">Zambia (+260)</option>
-                            <option value="+263" selected>Zimbabwe (+263)</option>
-                        </select>
-                        <input type="tel" name="parents_no" placeholder="Enter phone number" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Father Name *</label>
-                    <input type="text" name="father_name" placeholder="Father's full name" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Mother Name *</label>
-                    <input type="text" name="mother_name" placeholder="Mother's full name" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Country of Origin *</label>
-                    <input type="text" name="country" placeholder="Country of origin" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Degree (Diploma / Bachelor's / Master's) *</label>
-                    <select name="degree" required>
-                        <option value="">Select degree</option>
-                        <option>Diploma</option>
-                        <option>Bachelor's</option>
-                        <option>Master's</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Course Choice 1 *</label>
-                    <input type="text" name="course_choice_1" placeholder="First preferred course" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Course Choice 2</label>
-                    <input type="text" name="course_choice_2" placeholder="Second preferred course">
-                </div>
-
-                <!-- DOCUMENT UPLOADS (RESTORED) -->
-                <div class="form-group">
-                    <label>Documents to be Attached *</label>
-                    <p class="file-note">
-                        <strong>Diploma:</strong> Passport/ID, O Level<br>
-                        <strong>Bachelor’s:</strong> Passport/ID, O Level, A Level<br>
-                        <strong>Master’s:</strong> Passport/ID, O Level, A Level, Bachelor’s Transcript
+                <!-- WhatsApp -->
+                <div class="merged-item">
+                    <i class="fa fa-whatsapp contact-icon whatsapp-icon"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Get instant responses to your questions</p>
+                    <a href="https://wa.me/+263786488162"
+                       class="btn btn-whatsapp"
+                       target="_blank">
+                        Chat with an Advisor
+                    </a>
+                    <p class="contact-detail">
+                        Available: Mon-Sat, 9:00 AM - 6:00 PM
                     </p>
-
-                    <label>Passport / ID</label>
-                    <input type="file" name="passport" accept=".pdf,.jpg,.jpeg,.png" required>
-
-                    <label>O Level</label>
-                    <input type="file" name="olevel" accept=".pdf,.jpg,.jpeg,.png" required>
-
-                    <label>A Level</label>
-                    <input type="file" name="alevel" accept=".pdf,.jpg,.jpeg,.png">
-
-                    <label>Bachelor’s Transcript (Master’s only)</label>
-                    <input type="file" name="bachelor_transcript" accept=".pdf,.jpg,.jpeg,.png">
                 </div>
 
-                <div class="form-group checkbox-group">
-                    <label>
-                        <input type="checkbox" name="consent" required>
-                        I confirm that all information provided is accurate and I consent to IndoAfrica Education processing my application.
-                    </label>
+                <div class="merged-divider"></div>
+
+                <!-- Email -->
+                <div class="merged-item">
+                    <i class="material-icons contact-icon email-icon">mail</i>
+                    <h3>Email</h3>
+                    <p>Send us detailed enquiries</p>
+                    <a href="mailto:indoafrica.education@gmail.com"
+                       class="btn btn-email">
+                        indoafrica.education@gmail.com
+                    </a>
+                    <p class="contact-detail">
+                        Response time: Within 24 hours
+                    </p>
                 </div>
 
-                <input type="hidden" name="_subject" value="New Student Application - IndoAfrica Education">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
+                <div class="merged-divider"></div>
 
-                <button type="submit" class="btn btn-submit">Submit Application</button>
-            </form>
+                <!-- Application -->
+                <div class="merged-item">
+                    <i class="material-icons contact-icon app-icon">description</i>
+                    <h3>Application Portal</h3>
+                    <p>Submit your application securely</p>
+                    <a href="apply.html"
+                       class="btn btn-primary">
+                        Go to Application Form
+                    </a>
+                    <p class="contact-detail">
+                        Secure document upload available
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>Q: Is the student visa guaranteed?</h3>
+                <p>
+                    A: Yes. When a student qualifies for admission and submits complete
+                    and genuine documents as guided by our team, the Indian student visa
+                    is approved in line with embassy regulations. Our team assists students
+                    in preparing correct documentation to ensure successful outcomes.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: Do I have to pay for your services?</h3>
+                <p>
+                    A: No. We provide free guidance and application support to all students.
+                    Our service is covered by partnerships with universities.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: What's the difference between universities with and without flight tickets?</h3>
+                <p>
+                    A: Some universities offer a first flight ticket to India as part of their
+                    international student package, while others do not. All other admission
+                    processes and visa requirements remain the same.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: How long does the application process take?</h3>
+                <p>
+                    A: From application submission to receiving an offer letter typically takes
+                    2-4 weeks. The complete process including visa approval usually takes 6-8 weeks.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: What documents do I need to apply?</h3>
+                <p>
+                    A: You will need: passport copy, academic certificates (O-Level, A-Level,
+                    or Diploma), academic transcripts, and a CV/Resume. Additional documents
+                    may be required depending on the specific university.
+                </p>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="contact-cta">
+            <h3>Still have questions?</h3>
+            <p>Don't hesitate to reach out. We're here to help you every step of the way.</p>
+            <a href="https://wa.me/+263786488162"
+               class="btn btn-primary"
+               target="_blank">
+                Start a Conversation
+            </a>
         </div>
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
     <div class="container">
         <p>&copy; 2026 IndoAfrica Education. All rights reserved.</p>
+        <p class="disclaimer">
+            We provide application guidance and submission support.
+            Final admission decisions are made by universities.
+        </p>
     </div>
 </footer>
 
